@@ -37,7 +37,20 @@
     .w-lg-75 { width: 75%!important; }
     .w-lg-100 { width: 100%!important; }
 }
-.dark-theme{
-    color: white;
-    background-color: black;
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+/* 라이트모드 */
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: #fff ;
+    background-color: #000;
+  }
 }
